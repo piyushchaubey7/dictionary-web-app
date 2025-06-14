@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dictionary Web App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>Dictionary</h1>
+      <div class="controls">
+        <select id="font-select">
+          <option value="serif">Serif</option>
+          <option value="sans-serif">Sans-serif</option>
+          <option value="monospace">Monospace</option>
+        </select>
+        <label class="switch">
+          <input type="checkbox" id="dark-mode-toggle">
+          <span class="slider round"></span>
+        </label>
+      </div>
+    </header>
+
+    <div class="search-box">
+      <input type="text" id="word-input" placeholder="Enter a word..." />
+      <button onclick="searchWord()">🔍</button>
+    </div>
+
+    <div class="result" id="result">
+      <!-- Output will be injected here -->
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
